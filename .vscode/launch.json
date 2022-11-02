@@ -5,14 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch via NPM",
+            "name": "download chromium test",
+            "program": "install.js",
             "request": "launch",
-            "runtimeArgs": [
-                "run-script",
-                "install"
+            "cwd": "${workspaceFolder}/step1",
+            "skipFiles": [
+                "<node_internals>/**"
             ],
-            "console": "integratedTerminal",
-            "runtimeExecutable": "npm",
+            "type": "node"
+        },
+        {
+            "name": "launch chromium test",
+            "program": "index.js",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/step2",
             "skipFiles": [
                 "<node_internals>/**"
             ],

@@ -2,3 +2,4 @@ node_modules
 *.lock
 .local-chromium
 *-lock.json
+.dev_profile*
